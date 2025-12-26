@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ryan Mambou | Développeur Web</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=32">
+</head>
+<body>
+
+  <div class="bg-mobile" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">RM</div>
+
+    <nav class="nav-desktop d-none d-md-flex" aria-label="Navigation principale">
+      <a href="#accueil" data-i18n="nav_home">Accueil</a>
+      <a href="#apropos" data-i18n="nav_about">À propos</a>
+      <a href="#projets" data-i18n="nav_projects">Projets</a>
+      <a href="#competences" data-i18n="nav_skills">Compétences</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" aria-label="Changer la langue">
+        <button type="button" class="lang-btn" data-lang="fr" aria-label="Français">
+          <span class="flag" aria-hidden="true">
+            <svg viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+              <rect width="1" height="2" x="0" y="0" fill="#0055A4"></rect>
+              <rect width="1" height="2" x="1" y="0" fill="#FFFFFF"></rect>
+              <rect width="1" height="2" x="2" y="0" fill="#EF4135"></rect>
+            </svg>
+          </span>
+          <span class="lang-label">FR</span>
+        </button>
+
+        <button type="button" class="lang-btn" data-lang="en" aria-label="English">
+          <span class="flag" aria-hidden="true">
+            <svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+              <clipPath id="u">
+                <rect width="60" height="30"></rect>
+              </clipPath>
+              <g clip-path="url(#u)">
+                <rect width="60" height="30" fill="#012169"></rect>
+                <path d="M0,0 60,30 M60,0 0,30" stroke="#FFF" stroke-width="6"></path>
+                <path d="M0,0 60,30 M60,0 0,30" stroke="#C8102E" stroke-width="4"></path>
+                <path d="M30,0 V30 M0,15 H60" stroke="#FFF" stroke-width="10"></path>
+                <path d="M30,0 V30 M0,15 H60" stroke="#C8102E" stroke-width="6"></path>
+              </g>
+            </svg>
+          </span>
+          <span class="lang-label">EN</span>
+        </button>
+      </div>
+
+      <button class="navbar-toggler d-md-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="menuMobileLabel" data-i18n="menu">Menu</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fermer"></button>
+  </div>
+
+  <div class="offcanvas-body d-flex flex-column align-items-center gap-3">
+    <a class="menu-link" href="#accueil" data-bs-dismiss="offcanvas" data-i18n="nav_home">Accueil</a>
+    <a class="menu-link" href="#apropos" data-bs-dismiss="offcanvas" data-i18n="nav_about">À propos</a>
+    <a class="menu-link" href="#projets" data-bs-dismiss="offcanvas" data-i18n="nav_projects">Projets</a>
+    <a class="menu-link" href="#competences" data-bs-dismiss="offcanvas" data-i18n="nav_skills">Compétences</a>
+    <a class="menu-link" href="#contact" data-bs-dismiss="offcanvas" data-i18n="nav_contact">Contact</a>
+  </div>
+</div>
+
+<main>
+
+  <section id="accueil">
+    <h1>Ryan Mambou</h1>
+    <p data-i18n="hero_text">
+      Développeur web et web mobile — front-end et back-end.
+      Conception d’applications et de sites performants, modernes et responsives.
+    </p>
+    <a class="btn" href="#projets" data-i18n="hero_cta">Voir mes projets</a>
+  </section>
+
+  <section id="apropos">
+    <img src="img/ryan.jpg" alt="Portrait de Ryan Mambou" />
+    <div>
+      <h2 data-i18n="about_title">À propos</h2>
+      <p data-i18n="about_text">
+        Développeur web et web mobile, je travaille aussi bien sur la partie
+        front-end que back-end. J’accorde une importance particulière au responsive,
+        à la structure du code et à la qualité des interfaces.
+      </p>
+      <a class="btn" href="./img/CV_2025-12-19_RYAN_MAMBOU.pdf" target="_blank" rel="noopener" data-i18n="about_cv">
+        Télécharger mon CV
+      </a>
+    </div>
+  </section>
+
+  <section id="projets">
+    <h2 data-i18n="projects_title">Projets</h2>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="img/boulangerie.png" alt="Site vitrine boulangerie" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="p1_title">Boulangerie — site vitrine</h3>
+              <p data-i18n="p1_desc">HTML / CSS — site responsive avec une mise en page claire et professionnelle.</p>
+              <a class="project-btn" href="https://ryan95380.github.io/Projet_Boulangerie/" target="_blank" rel="noopener" data-i18n="see_site">
+                Voir le site
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="img/méteo1.png" alt="Application météo JavaScript" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="p2_title">Application météo</h3>
+              <p data-i18n="p2_desc">JavaScript & API — récupération et affichage dynamique de données météo.</p>
+              <a class="project-btn" href="https://ryan95380.github.io/Projet_Meteo/" target="_blank" rel="noopener" data-i18n="see_site">
+                Voir le site
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="img/clickFast.png" alt="Jeu ClickFast" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="p3_title">ClickFast</h3>
+              <p data-i18n="p3_desc">JavaScript — mini-jeu de rapidité basé sur le clic et la gestion du temps.</p>
+              <a class="project-btn" href="https://ryan95380.github.io/ClickFast_Ryan/" target="_blank" rel="noopener" data-i18n="see_site">
+                Voir le site
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="competences">
+    <h2 data-i18n="skills_title">Compétences</h2>
+    <div id="marquee" aria-label="Compétences techniques">
+      <div class="logos">
+        <img src="img/Js.gif" alt="JavaScript" />
+        <img src="img/Html.gif" alt="HTML5" />
+        <img src="img/Css.gif" alt="CSS3" />
+        <img src="img/php.png" alt="PHP" />
+        <img src="img/Boostrap.png" alt="Bootstrap" />
+        <img src="img/Figma.png" alt="Figma" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 data-i18n="contact_title">Contact</h2>
+    <form id="contact-form">
+      <input type="text" name="nom" placeholder="Nom" required data-i18n-placeholder="ph_lastname" />
+      <input type="text" name="prenom" placeholder="Prénom" required data-i18n-placeholder="ph_firstname" />
+      <input type="email" name="email" placeholder="Email" required data-i18n-placeholder="ph_email" />
+      <textarea name="message" placeholder="Votre message..." required data-i18n-placeholder="ph_message"></textarea>
+      <button type="submit" class="btn-form" id="send-btn" data-i18n="send">Envoyer</button>
+      <p id="form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Ryan Mambou · <span data-i18n="footer_role">Développeur Web & Web Mobile</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
