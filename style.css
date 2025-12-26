@@ -322,7 +322,6 @@ footer p{ margin: 0; }
     background-position: right center;
     background-color: rgba(0,0,0,.40);
     background-blend-mode: color;
-    background-size: auto 100%;
   }
 
   section{ max-width: 92%; }
